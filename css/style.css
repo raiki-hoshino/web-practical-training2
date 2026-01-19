@@ -1,18 +1,48 @@
-.img-list ul{
+#top ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
-}
+    gap: 25px;
+    justify-content: center;
+    }
 
-.img-list li{
-    width: 25%;
-    box-sizing: border-box;
-    padding: 10px;
-}
-.img-list img{
+    #top li {
+    width: 20%; /* カード幅 */
+    }
+
+    #top img {
     width: 100%;
     height: auto;
-    display: block;
+    }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 90px;
+}
+
+.black{
+    margin: 30px 70px 30px 0px;
+    height: auto;
+    width: 300px;
+    
+}
+.item1img{
+    display: flex;
+    justify-content: center;
+}
+
+.messa{
+    margin-top: 20px;
+}
+.tittle{
+    margin: 10px 0 0 185px;
+}
+.menu{
+    display: flex;
+    gap: 13px;
+    list-style: none;
+    margin: 40px 0 10px 185px;
 }
