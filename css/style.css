@@ -47,6 +47,24 @@ a {
     margin: 60px 0;
 }
 
+/* item1 */
+.item{
+    display: flex;
+}
+.item-img img{
+    width: 400px;
+    height: auto;
+    margin: 20px 0 20px 50px;
+
+}
+.page-title{
+    margin-left: 60px;
+}
+.item-text {
+    margin: 20px 40px 0 40px;
+
+}
+
 /* レスポンシブ対応デザイン */
 @media (max-width : 600px){
 
