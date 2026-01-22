@@ -1,48 +1,48 @@
-#top ul {
-    display: flex;
-    flex-wrap: wrap;
+@charset "utf-8";
+
+a {
+            text-decoration: none;
+            color: black;
+}
+/*メインの画像をグリッドの配置にする (ここから) */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 25px;
-    justify-content: center;
-    }
-
-    #top li {
-    width: 20%; /* カード幅 */
-    }
-
-    #top img {
+}
+/*メインの画像をグリッドの配置にする (ここまで) */
+.product-list img {
     width: 100%;
-    height: auto;
-    }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 90px;
 }
 
-.black{
-    margin: 30px 70px 30px 0px;
-    height: auto;
-    width: 300px;
-    
-}
-.item1img{
-    display: flex;
-    justify-content: center;
-}
+/*wrapperで表示サイズを調整する(ここから) */
+.wrapper {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
 
-.messa{
-    margin-top: 20px;
 }
-.tittle{
-    margin: 10px 0 0 185px;
-}
-.menu{
+/*wrapperで表示サイズを調整する(ここまで) */
+
+/* headerとfooterを横並びにする(ここから) */
+#header {
     display: flex;
-    gap: 13px;
+    justify-content: flex;
+}
+#footer .menu {
+    display: flex;
     list-style: none;
-    margin: 40px 0 10px 185px;
+}
+.menu li {
+    margin-right: 15px;
+}
+/* headerとfooterを横並びにする(ここまで) */
+
+.link-text{
+    display: block;
+    text-align: center;
+    margin: 60px 0;
 }
