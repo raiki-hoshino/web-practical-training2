@@ -46,3 +46,27 @@ a {
     text-align: center;
     margin: 60px 0;
 }
+
+/* レスポンシブ対応デザイン */
+@media (max-width : 600px){
+
+.product-list{
+    grid-template-columns: repeat( 2 , 1fr);
+
+}
+.product-list img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.site-title img{
+    max-width: 100%;
+    height: auto;
+}
+.product-list p{
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-top: 8px;
+}
+}
