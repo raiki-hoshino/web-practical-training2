@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <title>Furniture Design</title>
         <meta name="description" content="家具の紹介ページ">
+        <meta name="viewport" content="width=device-width , initial-scale=1"> <!--pcとスマホをスイッチするために必要なコード-->
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!--cssリセット-->
         <link rel="stylesheet" href="css/style.css">
-        <!-- ブラウザによってcssが外れないようにするため -->
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> 
-        <meta name="viewport" content="width=device-width" , initial-scale="1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
-        <link rel="icon" href="img/img/favicon.ico">
     </head>
     <body>
-        <header class="header">
+        
+            <header id="header" class="wrapper">
             <h1>
-                <a href="index.html"><img src="img/img/logo.svg" alt="Furniture Design"  class="img"></a>
+                <a href="index.html" class="site-title"><img src="img/img/logo.svg" alt="Furniture Design"> </a>
             </h1>
-                        <navi>
+            <nav>
                 三
-            </navi>
+            </nav>
         </header>
         <main>
-            <P class="tittle">プロダクトタイトル</P>
-            <div class="item1img">
-                <img src="img/img/item1.jpg" alt="黒い椅子" class="black">
-                <div class="messa">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p><br>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p><br>
-                    <p>￥99,999 + tax</p><br><br>
-                    <p>SIZE:    W999 * D999 * H999</p>
-                    <p>COLOR:   テキスト</p>
-                    <p>MATERIAL:  テキストテキスト</p>
+
+            <div class="content-wrapper">
+                <h1 class="page-title"></h1>
+                <div class="item">
+                    <div class="item-img">
+
+
+                    </div>
+                    <div class="item-text">
+                        <p>木の温もりとシンプルなデザインが調和した、日常使いに最適なチェアです。   無駄を省いたフォルムは空間を選ばず、ダイニングやワークスペースなど   さまざまなシーンに自然となじみます。   座る人の動きを妨げない、すっきりとした佇まいが魅力です。
+
+背中にやさしくフィットする背もたれと、安定感のある座面設計により、   長時間座っても疲れにくい座り心地を実現しました。   毎日の食事や作業時間を、快適で心地よいひとときに変えてくれる一脚です。</p>
+
+                    </div>
                 </div>
 
-
-                
-
+                <a class="link-text" href="products.html">Back To Products</a>
             </div>
         </main>
-                <footer id="fotter" class="wrapper">
-
-            <!-- <p class="">View More</p> -->
+        <footer id="footer" class="wrapper">
             <ul class="menu">
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>Facebook</li>
+                <li>INSTAGRAM</li>
+                <li>X</li>
+                <li>FACEBOOK</li>
             </ul>
         </footer>
-        
     </body>
-</html>
+    
