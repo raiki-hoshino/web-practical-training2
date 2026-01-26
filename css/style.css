@@ -19,11 +19,22 @@ a {
 
 /*wrapperで表示サイズを調整する(ここから) */
 .wrapper {
+    /* display: flex; */
+
     width: 100%;
     max-width: 1360px;
     margin: 0 auto;
     padding: 0 40px;
 
+}
+
+.site-title{
+    margin: 20px 0 10px 5px;
+}
+
+.hanbar{
+    margin: 15px 0 0 880px;
+    font-size: 2rem;
 }
 /*wrapperで表示サイズを調整する(ここまで) */
 
@@ -38,6 +49,7 @@ a {
 }
 .menu li {
     margin-right: 15px;
+    margin-bottom: 200px;
 }
 /* headerとfooterを横並びにする(ここまで) */
 
@@ -54,17 +66,21 @@ a {
 .item-img img{
     width: 400px;
     height: auto;
-    margin: 20px 0 20px 50px;
+    margin: 20px 0 20px 150px;
 
 }
 .page-title{
-    margin-left: 60px;
+    margin: 5px 0 5px 150px;
+    font-size: 20px;
 }
 .item-text {
     margin: 20px 40px 0 40px;
 
 }
 
+.text1{
+    width: 500px;
+}
 /* レスポンシブ対応デザイン */
 @media (max-width : 600px){
 
@@ -78,13 +94,43 @@ a {
     display: block;
 }
 
-.site-title img{
+/* .site-title img{
     max-width: 100%;
     height: auto;
-}
+} */
 .product-list p{
     font-size: 0.8rem;
     line-height: 1.4;
     margin-top: 8px;
+}
+
+/* index */
+.tittle-img {
+    margin: 10px 0 10px 0 ;
+    max-width: 50px;
+    width: 50%;
+    
+}
+
+.hanbar{
+    width:100%;
+    height: auto;
+    margin: 10px 0 10px 250px ;
+}
+
+
+
+
+
+/* item1 */
+
+.page-title{
+    width: 100%;
+    margin: 0 0 0 30px;
+
+}
+.item1{
+    width: 100%;
+    height: auto;
 }
 }
