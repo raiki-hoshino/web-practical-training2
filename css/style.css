@@ -167,7 +167,7 @@ a {
 
 .menu{
     display: flex;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 30px;
     gap: 50px;
     width: 100%;
 }
@@ -201,4 +201,17 @@ a {
     max-width: 100%;
 } */
 
+
+/* company */
+
+#company .info td {
+    display: block;
+    width: 100%;
+    border-bottom: none;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+#company .info tr{
+    border-bottom: 1.5px solid gray;
+}
 }
