@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Furniture Design</title>
+        <meta name="description" content="家具の紹介ページ">
+        <meta name="viewport" content="width=device-width , initial-scale=1"> <!--pcとスマホをスイッチするために必要なコード-->
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!--cssリセット-->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js" defer></script>
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"> -->
+
+    </head>
+    <body>
+        <header id="header" class="wrapper">
+            <h1 class="tittle-img">
+                
+                <a href="index.html"><img src="img/img/logo.svg" alt="Furniture Design"></a>
+            </h1>
+            <nav>
+                <!-- 開くボタン -->
+                <button type="button"  id="menu-open" class="button-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div id="menu-panel">
+                    <!-- 閉じるボタン -->
+                    <button type="button" id="menu-close" class="button-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <ul class="menu-list">
+                        <li><a href="#">Online Shop</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="contact-wrapper">
+                <h1 class="page-title">Contact</h1>
+            
+            <form id="contact-form" action="#" method="post">
+                お名前 
+                <input type="text" name="name" placeholder="山田 太郎">
+                <br>
+                <br>
+                メールアドレス 
+                <input type="email" name="email"   placeholder="ohara111@ngo.ohara">
+                <br>
+                <br>
+                電話番号 
+                <input type="tell" name="tell"  placeholder="059-111-1111">
+                <br>
+                <br>
+                年齢
+                <input type="number" name="age" min="0" max="150" placeholder="例)20">
+                <br>
+                <br>
+                性別:<br>
+                <input type="radio" value="男性">男性
+                <input type="radio" value="女性">女性
+                <input type="radio" value="その他">その他
+                <br>
+                <br>
+                お問い合わせ種別
+                <select name="">
+                    <option value="修理・サポート">修理・サポート</option>
+                    <option value="取材">取材</option>
+                    <option value="採用">採用</option>
+                    <option value="その他">その他</option>
+                </select>
+                <br>
+                <br>
+                興味のある商品（複数可）
+                <br>
+                <input type="checkbox" name="" value="チェア" checked>チェア
+                <input type="checkbox" name="" value="テーブル">テーブル
+                <input type="checkbox" name="" value="ソファ"> ソファ
+                <input type="checkbox" name="" value="照明">照明
+                <br>
+                <br>
+                希望納期
+                <br>
+                
+                <input type="date">
+                <br>
+                添付ファイル
+                
+                <input type="file" >
+                <br>
+                <br>
+                お問い合わせ内容
+                <br>
+                <textarea name="contact" placeholder="メッセージを入力"></textarea>
+                <br>
+                <br>
+                プライバシーに同意します<input type="radio">
+                <br><br>
+                <button type="submit">Send</button>
+
+            </form>
+            </div>
+        </main>
+        <footer id="footer" class="wrapper">
+            <ul class="menu">
+                <li>INSTAGRAM</li>
+                <li>X</li>
+                <li>FACEBOOK</li>
+            </ul>
+        </footer>
+    </body>
+</html>
