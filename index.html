@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!--cssリセット-->
         <link rel="stylesheet" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main.js" defer></script>
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"> -->
+
     </head>
     <body>
         <header id="header" class="wrapper">
@@ -17,8 +19,31 @@
                 
                 <a href="index.html"><img src="img/img/logo.svg" alt="Furniture Design"></a>
             </h1>
-            <nav class="hanbar">
-                三
+            <nav>
+                <!-- 開くボタン -->
+                <button type="button"  id="menu-open" class="button-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div id="menu-panel">
+                    <!-- 閉じるボタン -->
+                    <button type="button" id="menu-close" class="button-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <ul class="menu-list">
+                        <li><a href="#">Online Shop</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+                </div>
             </nav>
         </header>
         <main>

@@ -82,6 +82,91 @@ a {
     width: 500px;
 }
 
+/* 開閉ボタン */
+.button-menu{
+    position: fixed; /*位置を固定*/
+    right: 1rem; 
+    top: 1rem;
+    z-index: 4; /*重なり位置*/
+    padding: 0.5rem 1rem; /*内側余白*/
+    border: 1px solid palevioletred ; /*枠線　実践　茶色 */
+    border-radius: 50%; /*角を丸める*/
+    height: 4rem;
+    width: 4rem;
+
+    
+}
+
+/*開くボタン*/
+#menu-open span{
+    width: 100%; /*横*/
+    height: 2px; /*高さ*/
+    background-color: black; /*背景色*/
+    position: relative; /*位置を相対化*/
+    display: block;
+}
+
+#menu-open span:nth-child(1){
+top: 0;
+}
+#menu-open span:nth-child(2){
+margin:  8px 0; /*外側余白*/
+}
+#menu-open span:nth-child(3){
+    top: 0;
+}
+#menu-close{
+    border: 1px solid white;
+}
+
+/*閉じるボタン*/
+#menu-close span{
+    width: 100%; /*横*/
+    height: 2px; /*高さ*/
+    background-color: white; /*背景色*/
+    position: relative; /*位置を相対化*/
+    display: block;
+}
+
+#menu-close span:nth-child(1){
+translate: 0 4px;
+transform: rotate(-315deg);
+}
+#menu-close span:nth-child(2){
+    opacity: 0;
+}
+#menu-close span:nth-child(3){
+transform: rotate(-45deg);
+}
+/* スライドメニューパネル */
+#menu-panel{
+  position: fixed; /* 位置固定 */
+  top: 0;     /* 上 */
+  right: 0;   /* 右 */
+  z-index: 10;   /* 重なり位置 */
+  padding: 8rem 2rem 2rem;    /* 内側余白 */
+  width: 20vw;    /* 横幅 */
+  height: 100vh;    /*縦幅  */
+    background-color: gray;
+    font-family: var(--oswald-font);
+    translate: 100%;
+    }
+
+    .menu-list{
+    list-style: none;
+    }
+
+    .menu-list li{
+    margin: 1.5rem 0;
+    opacity: 0;
+    font-family: fantasy;
+    }
+    .menu-list a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--light-grey);
+}
+
 /* company */
 
 .page-title{
@@ -213,5 +298,9 @@ a {
 }
 #company .info tr{
     border-bottom: 1.5px solid gray;
+}
+
+.content-wrapper{
+    
 }
 }
