@@ -244,6 +244,17 @@ transform: rotate(-45deg);
     
 }
 
+.wrapper .menu li{
+    gap: 1rem;
+    
+}
+/*ハンバーガーメニュー*/
+.button-menu{
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
 .hanbar{
     width:100%;
     height: auto;

@@ -10,7 +10,7 @@ const menuOptions = {
 
 };
 // 開く処理
-OpenBtn.addEventListener("dbclick" , ()=>{
+OpenBtn.addEventListener("click" , ()=>{
 
     menuPanel.animate({
         translate : ["100vw" , 0] //移動　x軸 100%→0%
