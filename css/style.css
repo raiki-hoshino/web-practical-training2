@@ -259,6 +259,11 @@ transform: rotate(-45deg);
     place-items: center;
 }
 
+.carousel-item-active{
+    width: 500px;
+    height: 400px;
+    
+}
 /* レスポンシブ対応デザイン */
 @media (max-width : 600px){
 
