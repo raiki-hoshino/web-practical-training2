@@ -242,11 +242,23 @@ transform: rotate(-45deg);
 }
 
 #contact-form{
+    /*スマホで見ると変になる*/
     padding-left: 180px;
     width: 100%;
     /* text-align: center; */
 
 }
+
+#loading {
+    transition: all 1s;
+    background-color: #ddd;
+    position: fixed;
+    z-index: 9999; /*重なり位置　数値が大きいほど手前*/
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+
 /* レスポンシブ対応デザイン */
 @media (max-width : 600px){
 

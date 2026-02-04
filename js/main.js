@@ -9,6 +9,8 @@ const menuOptions = {
     fill : "forwards"
 
 };
+
+
 // 開く処理
 OpenBtn.addEventListener("click" , ()=>{
 
@@ -50,3 +52,34 @@ closeBtn.addEventListener("click" , ()=>{
 )
 });
 
+
+// const hour = Date.now().now.getSeconds();
+// const imgChange = document.querySelector("#timeImage");
+
+// if(hour >= 5 && hour < 12){
+//     imgChange.src = "img/img/61305DCC6FCE971FE676B36782144510138429DA.png";
+// } else if(hour >= 12 && hour <18){
+//     imgChange.src = "img/img/DDDE600E8324780A9163FF451535236B1FECDC46.jpeg";
+// } else{
+//     imgChange.src= "img/img/B8571BDF95F0D0CB5FA95A4B470BD8970BBD0859.jpeg"
+// }
+// console.log(hour)
+const imgChange = document.querySelector("#timeImage");
+
+    function changeImage() {
+    const hour = new Date().getHours();
+
+    if (hour >= 5 && hour < 12) {
+        imgChange.src = "img/img/61305DCC6FCE971FE676B36782144510138429DA.png";
+    } else if (hour >= 12 && hour < 18) {
+        imgChange.src = "img/img/DDDE600E8324780A9163FF451535236B1FECDC46.jpeg";
+    } else {
+        imgChange.src = "img/img/B8571BDF95F0D0CB5FA95A4B470BD8970BBD0859.jpeg";
+    }
+    }
+
+// 最初に1回実行
+changeImage();
+
+// 4秒ごとに実行
+setInterval(changeImage, 4000);
